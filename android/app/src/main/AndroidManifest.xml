@@ -1,4 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission
+        android:name="android.permission.INTERNET"
+        android:maxSdkVersion="18" />
     <application
         android:label="Visual Subs"
         android:name="${applicationName}"

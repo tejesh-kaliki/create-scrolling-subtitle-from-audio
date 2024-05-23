@@ -1,0 +1,41 @@
+# Visual subs
+
+You can find the releases of the app [here](https://github.com/tejesh-kaliki/scrolling_subtitles/releases).
+
+## Subtitle specification
+This app currently only supports `vtt` for the subtitle file. Follow these specifications for the content of the subtitle line:
+### 1. Adding character name:
+```name: line```
+
+### 2. More than 1 character:
+```name + name + name: line```
+ 
+### 3. Character speaking in background:
+```name(background): line```
+
+### 4. Italic text: (Enclose the required text in *s)
+```name: *This is italic line.*```
+
+### Subtitle example:
+For an example on how to specify the vtt file, check [this file](https://github.com/tejesh-kaliki/scrolling_subtitles/tree/master/examples/bookworm-CD5-subs.vtt).
+
+## Keyboard controls
+```
+space - play/pause
+Right Arrow - forward 10s
+Left Arrow - rewind 10s
+f - toggle fit window to content
+F11 - Enter/Exit Full Screen
+```
+
+## Colors
+- By default, only colors for a few characters from `Ascendance of a Bookworm` are available. You will have to select colors manually for all the other characters.
+- Colors file uses a json format. You can just click `save to file` in the colors file to create a json for the current selected colors.
+- In case you want to add colors manually, check [this file](https://github.com/tejesh-kaliki/scrolling_subtitles/tree/master/examples/colors.json) for the json format.
+
+## Image specifications
+- The recommended image resolution is `1125 x 992`. Use larger or smaller images by adjusting the text size as necessary.
+- But make sure the ratio is similar, because for now, it shows fixed number of subtitles (8) at a time.
+
+## Audio specifications
+- Supports most of the video and audio formats such as `mp4`, `mp3`, `mkv`, `aac`, and so on.
